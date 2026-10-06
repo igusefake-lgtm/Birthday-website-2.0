@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For Mantasha — Happy Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div class="orb orb1"></div><div class="orb orb2"></div>
+
+<section class="hero" id="home">
+  <div class="hero-wave"></div>
+  <div class="eyebrow">A little world made for you</div>
+  <h1><span>Happy Birthday</span><em>Mantasha</em></h1>
+  <p class="hero-sub">There are some things words can never quite say…<br>so I made you a little place instead.</p>
+  <button class="enter" onclick="enterSite()">Enter my world <span>↗</span></button>
+  <div class="scroll">SCROLL TO EXPLORE <i></i></div>
+</section>
+
+<main id="main">
+  <section class="intro reveal">
+    <p class="kicker">01 — OUR LITTLE WORLD</p>
+    <h2>Not just a birthday.<br><i>A feeling.</i></h2>
+    <p class="copy">Today is about you. So take your time, tap around, and open whatever catches your heart. I made every little corner with you in mind.</p>
+  </section>
+
+  <section class="cards">
+    <article class="card reveal" onclick="openModal('letter')">
+      <span class="num">01</span><span class="icon">♡</span>
+      <h3>A Letter<br><i>For You</i></h3><p>Things I wanted to say.</p><span class="arrow">↗</span>
+    </article>
+    <article class="card reveal" onclick="openModal('special')">
+      <span class="num">02</span><span class="icon">✦</span>
+      <h3>Why You're<br><i>Special</i></h3><p>A few little reasons.</p><span class="arrow">↗</span>
+    </article>
+    <article class="card reveal" onclick="openModal('dua')">
+      <span class="num">03</span><span class="icon">☾</span>
+      <h3>A Little<br><i>Dua</i></h3><p>For your beautiful future.</p><span class="arrow">↗</span>
+    </article>
+    <article class="card reveal" onclick="openModal('surprise')">
+      <span class="num">04</span><span class="icon">✧</span>
+      <h3>One Last<br><i>Surprise</i></h3><p>Save this one for last.</p><span class="arrow">↗</span>
+    </article>
+  </section>
+
+  <section class="quote reveal">
+    <div class="quote-mark">“</div>
+    <p>Some people enter your life quietly,<br>and somehow make the whole world softer.</p>
+    <span>— for Mantasha</span>
+  </section>
+
+  <section class="final reveal" id="final">
+    <div class="stars"></div>
+    <p class="kicker">06 — JUST ONE MORE THING</p>
+    <div class="heart">♡</div>
+    <h2>If I had to choose<br><i>again...</i></h2>
+    <p>I'd still choose you.</p>
+    <button onclick="celebrate()">Tap for the final surprise</button>
+  </section>
+
+  <footer>
+    <div>Made with intention.</div>
+    <strong>For Mantasha, always ♡</strong>
+  </footer>
+</main>
+
+<div class="modal" id="modal" onclick="closeModal(event)">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <p class="kicker" id="modalKicker"></p>
+    <h2 id="modalTitle"></h2>
+    <p id="modalText"></p>
+    <div class="modal-line"></div>
+    <span class="signature">— yours, with love ♡</span>
+  </div>
+</div>
+
+<div class="toast" id="toast">Happy Birthday, Mantasha ♡</div>
+<script src="script.js"></script>
+</body>
+</html>
